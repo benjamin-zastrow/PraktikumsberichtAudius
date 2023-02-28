@@ -1,0 +1,28 @@
+% =========================================================
+% Fancy appendix
+% 
+% ==  Instructions ==
+% If you choose to use this style, you must remove
+%   - \usepackage{appendix}
+%   - \begin{appendices} ...\end{appendices}
+%   - \renewcommand{\appendixname}
+% =========================================================
+
+
+% Defines page numbering to behave like this:
+% A, A1, A2, A3...
+\newcounter{mainpage}
+\renewcommand{\thepage}{%
+    \Alph{mainpage}%
+    \ifnum\value{page}>1\relax
+    \addtocounter{page}{-1}%
+    \arabic{page}%
+    \addtocounter{page}{1}%
+    \fi}%
+}
+
+% \switchpage to switch from A to B for the nex appendix
+% ... A4, A5 -> B, B1 ...
+\newcommand{\switchpage}{%
+    \stepcounter{mainpage}%
+    \setcounter{page}{1}}

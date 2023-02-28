@@ -1,0 +1,72 @@
+% =========================================================
+% Include packages
+% =========================================================
+
+% Refinement for typographic perfection
+\usepackage{microtype}
+
+% Hyperlinks
+\usepackage[bookmarks,bookmarksnumbered=true,hidelinks,pdfhighlight=/O]{hyperref}
+
+% Make listings colorful later in listingsstyle.tex
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+% Math fonts
+%\usepackage{mathptmx} %ACHTUNG: macht textformatierungen kaputt!
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+
+% SI units and alignment `S` in tables
+\usepackage{siunitx}
+
+
+% This and that
+\usepackage{lscape} % landscape (rotated) pages
+\usepackage{longtable, tabularx, booktabs} % tables
+\usepackage{multicol, multirow} % tables formatting
+\usepackage{cleveref} % \cref is better than \ref
+
+\usepackage[normalem]{ulem}
+% Add a command \reduwave, a red variante of \uwave from the ulem package.
+\makeatletter
+  \UL@protected\def\reduwave{\leavevmode \bgroup%
+    \ifdim \ULdepth=\maxdimen \ULdepth 3.5\p@%
+    \else \advance\ULdepth2\p@%
+    \fi \markoverwith{\lower\ULdepth\hbox{\textcolor{red}{\sixly \char58}}}\ULon}
+\makeatother
+
+\usepackage{pgfplots} % use LaTeX to generate plots. Or include pdfs from gnuplot/matlab...
+\pgfplotsset{compat=1.16}
+
+
+% Images and subfigures
+% Always try to include eps of pdf for scalable images and searchable text...
+\usepackage{graphicx} % \includegraphics
+\usepackage{float} % for alignment [H]
+\usepackage{wrapfig} % Including figures which text can flow around
+\usepackage[margin=15pt,font=small,labelfont={bf,sf}]{caption}
+%\usepackage[labelfont=bf,textfont=it,singlelinecheck=off,justification=centering]{caption} % left/centering/raggedright
+\usepackage[justification=centering]{subcaption} % for caption a) b)... on subfigures
+
+\usepackage[page]{appendix} % Anhang
+\usepackage{pdfpages} % \includepdf for appendices
+
+
+% Literature
+\usepackage[
+  backend=biber,
+  doi=true,
+  style=ieee,
+  maxnames=2,
+  minnames=1
+  ]{biblatex}
+\usepackage[ngerman]{babel}
+\addto\extrasngerman{%
+  \sisetup{locale = DE}
+  \crefname{listing}{Quelltext}{Quelltexte}
+}
+\usepackage[autostyle,german=guillemets]{csquotes}

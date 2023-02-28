@@ -1,0 +1,31 @@
+% =========================================================
+% Define (german) translations
+% =========================================================
+
+\DefineBibliographyStrings{ngerman}{%
+    presentedat = {erschienen bei \addspace},
+}
+
+
+
+
+%==============================================
+% nur gebraucht, wenn [ngerman]{babel} nicht
+% verwendet wird... leaving this here for legacy reasons
+% For package captions
+\if \not
+
+    \addto\captionsngerman{
+        \renewcommand\figurename{Abbildung}
+        \renewcommand\tablename{Tabelle}
+        %    \renewcommand\contentsname{Inhalt}
+        \renewcommand\lstlistingname{Quelltext}
+        \renewcommand\lstlistlistingname{Quelltextverzeichnis}
+    }
+    
+    % For package appendix
+    \renewcommand{\appendixname}{Anhang}
+    \renewcommand{\appendixpagename}{Anhang} % Falls Option [page] gewählt
+    \renewcommand{\appendixtocname}{Anhang} % Falls Option [toc] gewählt
+
+\fi

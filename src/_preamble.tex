@@ -1,0 +1,72 @@
+% !TeX encoding = UTF-8
+% Basic font, translations and page style.
+\documentclass[12pt,ngerman,a4paper]{article}
+\usepackage[ngerman]{babel}
+
+% Set font to Palatino and Source Sans Pro for Headings
+\usepackage{mathpazo}
+\usepackage[semibold]{sourcesanspro}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+% Set font to Times New Roman
+% \usepackage{fontspec}
+% \setmainfont{Times New Roman}
+
+%=========================
+%   Meta tags and title
+%=========================
+\def \myName {Benjamin Zastrow}
+\def \myTitle {Entwurf, Planung und prototypische Umsetzung eines teilautomatischen Systems, um Arbeitspakete effizient unter Mitarbeitern zu verteilen}
+\def \mySubtitle {audius GmbH}
+% Change to Betreuerin in case of female supervisor
+\def \supervisor {Betreuer}
+\def \thesupervisor {FH-Prof.\ Dr.\ Michael Gadermayr}
+\def \thesisType {Berufspraktikum}
+\def \course  {Wirtschaftsinformatik \& Digitale Transformation}
+\def \bigboss {FH-Prof.\ MMag.\ Dr.\ Manfred Mayr}
+\def \companyboss {Dipl.-Ing.\ Stefan Wambacher}
+%=========================
+%      Includes
+%=========================
+\input{etc/packages}      % include packages
+\input{etc/fh-style}      % main document style
+\input{etc/translations}  % german translations
+\input{etc/listingsstyle} % colorful listings (source code)
+\input{etc/macros}        % custom definitions
+\input{etc/metadata}      % setting pdf meta data
+
+% Images path
+\graphicspath{{frontmatter/images/} {chapters/images/}}
+
+% Biblography file. You can add multiple like above.
+\addbibresource{literature.bib}
+\begin{document}
+% ========================================================
+%                  Begin of the document
+% ========================================================
+    % Keywords
+    \setmetadata{IT, Bachelorarbeit, FH-Salzburg}
+    % disable page numbering
+    \pagenumbering{gobble}
+    \include{frontmatter/Deckblatt}
+    \include{frontmatter/Eidesstattliche} \newpage
+    \include{frontmatter/Danksagung} \newpage
+%=========================
+%   Tables and lists...
+%=========================
+    % roman page numbering
+    \pagenumbering{roman}
+    \ihead{}
+    %Inhaltsverzeichnis
+    \tableofcontents
+    \newpage
+    \let\oldnumberline\numberline
+    \include{frontmatter/Abkuerzungen} \newpage
+    % Uncomment the line below to add "Abbildung x. " to list of figures
+    \renewcommand{\numberline}[1]{\makebox[\widthof{\figurename~#1: }][l]{\figurename~#1:}}
+    \listoffigures     \newpage    % Abbildungsverzeichnis
+    % Uncomment the line below to add "Table x. " to list of tables
+    \renewcommand{\numberline}[1]{\makebox[\widthof{\tablename~#1: }][l]{\tablename~#1:}}
+    \listoftables      \newpage    %Tabellenverzeichnis
+    \let\numberline\oldnumberline
