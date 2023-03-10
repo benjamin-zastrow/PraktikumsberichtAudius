@@ -1,0 +1,12 @@
+*.aux
+*.bbl
+*.bcf
+*.lof
+*.lot
+*.out
+*.xml
+*.toc
+build/index/chapters/
+build/index/etc/
+build/index/frontmatter/
+build/index/literature.bib
