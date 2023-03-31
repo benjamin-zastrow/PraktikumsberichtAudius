@@ -144,6 +144,35 @@ Nach gegebenem Feedback machte ich mich nun an die Arbeit, dieses umzusetzen. Da
 \subsubsection*{17. März - 8:45 bis 15:15}
 Heute migrierte ich die erstellten Project Operations Customizations in eine neue Testumgebung, nachdem die Laufzeit der alten Umgebung erreicht war. Geplant war, dass das System heute in die Umgebung des Unternehmens migriert wird, was sich jedoch aufgrund nachzuholender Aktualisierungen auf diesem verzögert.
 
+\subsubsection*{20. März - 8:45 bis 16:30}
+An diesem Tag setzte ich das Feedback bezüglich der Dashboards um. Hierbei handelt es sich um die Anforderung, gebuchte Tasks und Buchungen nicht nur für die aktuelle Woche, sondern auch für nachfolgende Wochen einsehen zu können. Desweiteren betrieb ich Recherche bzgl. Drag'n'Drop Dashboards in PowerBI, welche das Task-Assignment vereinfachen sollten. Dies stellt sich jedoch als unmöglich heraus, weswegen die Lösung für das einfache Task-Assignment wohl ein selbstgeschriebener IFrame, welcher die verfügbaren Tasks anzeigt und die entsprechende Dataverse-Aktion im Anschluss durchführt, sein wird.
+
+\subsubsection*{21. März - 8:45 bis 15:15}
+Heute finalisierte ich das Task-Assignment über das Task-Formular, womit Mitarbeiter nun Aufgaben, welche ihnen in dem Dashboard vorgeschlagen werden, schnell zuweisen können. Die direkte Zuweisung mittels eines IFrames im Dashboard erscheint eher schwierig, da ein sogenanntes "System-Dashboard" notwendig ist, um JavaScript-Aktionen in einem eingebetteten IFrame auszuführen. Die Kombination von PowerBI und IFrames ist in System-Dashboards jedoch kompliziert.
+
+\subsubsection*{22. März - 8:45 bis 15:15}
+An diesem Tag beschäftigte ich mich erneut mit den IFrames, da ich nach kurzem Testen darauf gestoßen bin, dass doch Möglichkeiten bestehen, auf die Microsoft Xrm-Bibliothek innerhalb eines IFrames auf einem Dashboard zuzugreifen. Entsprechend habe ich ein Dynamics Dashboard mit HTML, CSS und JavaScript "nachgebaut", mit welchem man mittels eines einfachen Klicks einen freien Task sich selbst zuordnen kann.
+
+\subsubsection*{23. März - 8:45 bis 15:15} 
+Heute finalisierte ich das selbsterstellte HTML-Dashboard, welches mittels eines IFrame in Dynamics eingebettet werden kann. Der Fokus lag dabei darauf, die User Experience der regulären Dynamics Anwendungen möglichst zu imitieren, was relativ gut gelungen ist. Im Anschluss beschäftigte ich mich mit der Status-Update-Logik für Tasks in JavaScript, da diese noch einige Ungereimtheiten aufweist. Sobald diese Aufgabe abgeschlossen ist, werde ich in die Testphase übergehen, um weitere Bugs zu finden.
+
+\subsubsection*{24. März - 9:00 bis 16:00}
+Nach letzten Optimierungen bei dem PowerBI Dashboard für Mitarbeiter, den Task-Auswahl-, sowie Übersichts-Dashboards und bei der Statusfeld-Logik, habe ich heute das Projektmanager-Dashboard neu modelliert. Nun ist es auch hier möglich, die Auslastung einzelner Mitarbeiter, sowie der gesamten Belegschaft über mehrere Wochen hinweg einzusehen, um einen besseren Überblick über verbleibende Kapazitäten in nächster Zeit zu haben.
+
+\subsubsection*{27. März - Ausfall wegen Krankheit}
+
+\subsubsection*{28. März - 9:00 bis 16:00}
+Der heutige Tag setzte sich aus dem Optimieren beider Dashboards, sowie dem Testen des Gesamtsystems auf Fehler, zusammen. Bei den Dashboards gab es noch ein Problem mit Zeitbuchungen, die noch nicht genehmigt waren. Diese wurden bereits angezeigt, aber noch nicht von dem verbleibenden Aufwand abgezogen, weshalb letztendlich zu viel Zeit in den Dashboards angetragen wurde. Der gleiche Fehler bestand bei dem Erstellungsformular für Zeitbuchungen. 
+
+\subsubsection*{29. März - 9:30 bis 16:30}
+Heute aktualisierte ich weitere Teile der JavaScript Logik bezüglich der Status-Aktualisierungen. Hierbei bestand die Herausforderung darin, dass QM- und Dokumentationstasks nun in ihrer Dependency-Kette erkannt werden müssen, um festzustellen, ob eine Buchung in einen QM-Task den "Elterntask" auf den Status "QM" setzen soll. Im Anschluss hatten Stefan, Carlos und ich ein Meeting, bei dem ich noch einiges an Feedback und Ideen bekommen habe, besonders im Kontext der neu erstellten Funktionalitäten.
+
+\subsubsection*{30. März - 9:15 bis 16:15}
+An diesem Tag beschäftigte ich mich primär mit dem Feedback, welches ich bei dem gestrigen Meeting bekommen habe. Ich begann damit, das Task-Auswahldashboard im Bezug auf Design und tabellarischer Sortierfunktion zu überarbeiten und einen Fehler bei der Status-Logik zu beseitigen.  
+
+\subsubsection*{31. März - 8:45 bis 13:45}
+Heute erstellte ich zwei neue Ansichten des PowerBI Dashboards für Projektmanager: Eines, bei welchem die Mitarbeiterauslastung für eine frei-wählbare Woche angezeigt werden kann und eines, bei welchem für jedes Projekt eingesehen werden kann, wie viele der bereits gebuchten Arbeitsstunden dem Kunden verrechnet werden können und wie viele Stunden das Unternehmen selbst tragen muss. Darüber hinaus habe ich noch einen Fehler in dem Booking-Schnellerfassungsformular behoben, nachdem dieses die Warnungs- und Gesamtarbeitsstundenlimits nicht korrekt angezeigt hatte.  
+
 \subsection{April}
 
 \subsection{Mai}
