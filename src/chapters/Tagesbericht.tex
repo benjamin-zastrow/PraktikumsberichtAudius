@@ -123,56 +123,67 @@ Heute begann ich mit dem Umsetzen des Status Flags, welcher für jede Projektauf
 \subsubsection*{8. März - 8:45 bis 15:15 Uhr}
 Dieser Tag war überwiegend von Recherchen bzgl. der Ausführung von Microsoft Dataverse Actons über die JavaScript API geprägt. Hierbei fiel auf, dass die Dokumentation, welche Microsoft für derartige Anwendungsfälle zur Verfügung stellt, tendenziell eher unzureichend sind. Dies könnte damit zusammenhängen, dass die gleichen Aktionen auch über das kostenpflichtige PowerAutomate mit Dataverse Flows erreicht werden kann.
 
-\subsubsection*{9. März - 8:45 bis 15:15}
+\subsubsection*{9. März - 8:45 bis 15:15 Uhr}
 Das Ziel des heutigen Tages war es, Tasks über die JavaScript API erstellen zu können, sowie diese in eine hierarchische Zuordnung zu bringen. Dieses Thema stellte sich als überaus fordernd heraus, da die Dokumentation seitens Microsoft nicht für die Durchführung mit JavaScript verfügbar ist. Jedoch endete der Tag mit dem erfolgreichen Anlegen von Tasks über JS.
 
-\subsubsection*{10. März - 8:15 bis 14:30}
+\subsubsection*{10. März - 8:15 bis 14:30 Uhr}
 Nach dem gestrigen Erfolg habe ich heute die komplette Logik der automatisch generierten Dependency-Tasks in JavaScript umgesetzt. Nun muss sich der Anwender des Systems nicht mehr selbst darum kümmern, dass notwendige Tasks zur Dokumentation und für das Qualitätsmanagement getaner Arbeit angelegt werden.
 
-\subsubsection*{13. März - 8:45 bis 15:15}
+\subsubsection*{13. März - 8:45 bis 15:15 Uhr}
 Nach dem Wochenende beschäftigte ich mich mit Bugfixes bei der JavaScript Logik der Formulare, aber auch bei den PowerBI-Dashboards, da diese noch nicht vollständig fehlerfrei funktionierten, wenn nach dem Wochenende weder Tasks noch Bookings für einen Benutzer eingetragen waren.
 
-\subsubsection*{14. März - 8:45 bis 14:15}
+\subsubsection*{14. März - 8:45 bis 14:15 Uhr}
 An diesem Tag beschäftigte ich mich primär mit dem Bugfixing bestehender Logiken in JavaScript. Der Fokus lag dabei besonders auf den verschiedenen Situationen, in welchen bestimmte Felder für die Bearbeitung gesperrt sein, oder zur Bearbeitung freigegeben sein sollen.
 
-\subsubsection*{15. März - 8:45 bis 17:00}
+\subsubsection*{15. März - 8:45 bis 17:00 Uhr}
 Der heutige Tag war vormittags von der Implementierung einer Statusanzeige für Buchungen, bei welcher Mitarbeiter bei der Erstellung einer Zeitbuchung ersehen können, wie viel Zeit ihnen noch zur Verfügung steht. Am Nachmittag haben wir bei einem Teammeeting das bestehende System besprochen, wobei Feedback zur Implementierung gegeben und weitere Termine für die Zukunft besprochen wurden.
 
-\subsubsection*{16. März - 8:45 bis 15:15} 
+\subsubsection*{16. März - 8:45 bis 15:15 Uhr} 
 Nach gegebenem Feedback machte ich mich nun an die Arbeit, dieses umzusetzen. Dabei wurde mir empfohlen, das, von mir bisher nicht angewandte Konzept der Workflows und Geschäftsregeln anzuwenden, um nicht alle Logiken in JS implementieren zu müssen.
 
-\subsubsection*{17. März - 8:45 bis 15:15}
+\subsubsection*{17. März - 8:45 bis 15:15 Uhr}
 Heute migrierte ich die erstellten Project Operations Customizations in eine neue Testumgebung, nachdem die Laufzeit der alten Umgebung erreicht war. Geplant war, dass das System heute in die Umgebung des Unternehmens migriert wird, was sich jedoch aufgrund nachzuholender Aktualisierungen auf diesem verzögert.
 
-\subsubsection*{20. März - 8:45 bis 16:30}
+\subsubsection*{20. März - 8:45 bis 16:30 Uhr}
 An diesem Tag setzte ich das Feedback bezüglich der Dashboards um. Hierbei handelt es sich um die Anforderung, gebuchte Tasks und Buchungen nicht nur für die aktuelle Woche, sondern auch für nachfolgende Wochen einsehen zu können. Desweiteren betrieb ich Recherche bzgl. Drag'n'Drop Dashboards in PowerBI, welche das Task-Assignment vereinfachen sollten. Dies stellt sich jedoch als unmöglich heraus, weswegen die Lösung für das einfache Task-Assignment wohl ein selbstgeschriebener IFrame, welcher die verfügbaren Tasks anzeigt und die entsprechende Dataverse-Aktion im Anschluss durchführt, sein wird.
 
-\subsubsection*{21. März - 8:45 bis 15:15}
+\subsubsection*{21. März - 8:45 bis 15:15 Uhr}
 Heute finalisierte ich das Task-Assignment über das Task-Formular, womit Mitarbeiter nun Aufgaben, welche ihnen in dem Dashboard vorgeschlagen werden, schnell zuweisen können. Die direkte Zuweisung mittels eines IFrames im Dashboard erscheint eher schwierig, da ein sogenanntes "System-Dashboard" notwendig ist, um JavaScript-Aktionen in einem eingebetteten IFrame auszuführen. Die Kombination von PowerBI und IFrames ist in System-Dashboards jedoch kompliziert.
 
-\subsubsection*{22. März - 8:45 bis 15:15}
+\subsubsection*{22. März - 8:45 bis 15:15 Uhr}
 An diesem Tag beschäftigte ich mich erneut mit den IFrames, da ich nach kurzem Testen darauf gestoßen bin, dass doch Möglichkeiten bestehen, auf die Microsoft Xrm-Bibliothek innerhalb eines IFrames auf einem Dashboard zuzugreifen. Entsprechend habe ich ein Dynamics Dashboard mit HTML, CSS und JavaScript "nachgebaut", mit welchem man mittels eines einfachen Klicks einen freien Task sich selbst zuordnen kann.
 
-\subsubsection*{23. März - 8:45 bis 15:15} 
+\subsubsection*{23. März - 8:45 bis 15:15 Uhr} 
 Heute finalisierte ich das selbsterstellte HTML-Dashboard, welches mittels eines IFrame in Dynamics eingebettet werden kann. Der Fokus lag dabei darauf, die User Experience der regulären Dynamics Anwendungen möglichst zu imitieren, was relativ gut gelungen ist. Im Anschluss beschäftigte ich mich mit der Status-Update-Logik für Tasks in JavaScript, da diese noch einige Ungereimtheiten aufweist. Sobald diese Aufgabe abgeschlossen ist, werde ich in die Testphase übergehen, um weitere Bugs zu finden.
 
-\subsubsection*{24. März - 9:00 bis 16:00}
+\subsubsection*{24. März - 9:00 bis 16:00 Uhr}
 Nach letzten Optimierungen bei dem PowerBI Dashboard für Mitarbeiter, den Task-Auswahl-, sowie Übersichts-Dashboards und bei der Statusfeld-Logik, habe ich heute das Projektmanager-Dashboard neu modelliert. Nun ist es auch hier möglich, die Auslastung einzelner Mitarbeiter, sowie der gesamten Belegschaft über mehrere Wochen hinweg einzusehen, um einen besseren Überblick über verbleibende Kapazitäten in nächster Zeit zu haben.
 
 \subsubsection*{27. März - Ausfall wegen Krankheit}
 
-\subsubsection*{28. März - 9:00 bis 16:00}
+\subsubsection*{28. März - 9:00 bis 16:00 Uhr}
 Der heutige Tag setzte sich aus dem Optimieren beider Dashboards, sowie dem Testen des Gesamtsystems auf Fehler, zusammen. Bei den Dashboards gab es noch ein Problem mit Zeitbuchungen, die noch nicht genehmigt waren. Diese wurden bereits angezeigt, aber noch nicht von dem verbleibenden Aufwand abgezogen, weshalb letztendlich zu viel Zeit in den Dashboards angetragen wurde. Der gleiche Fehler bestand bei dem Erstellungsformular für Zeitbuchungen. 
 
-\subsubsection*{29. März - 9:30 bis 16:30}
+\subsubsection*{29. März - 9:30 bis 16:30 Uhr}
 Heute aktualisierte ich weitere Teile der JavaScript Logik bezüglich der Status-Aktualisierungen. Hierbei bestand die Herausforderung darin, dass QM- und Dokumentationstasks nun in ihrer Dependency-Kette erkannt werden müssen, um festzustellen, ob eine Buchung in einen QM-Task den "Elterntask" auf den Status "QM" setzen soll. Im Anschluss hatten Stefan, Carlos und ich ein Meeting, bei dem ich noch einiges an Feedback und Ideen bekommen habe, besonders im Kontext der neu erstellten Funktionalitäten.
 
-\subsubsection*{30. März - 9:15 bis 16:15}
-An diesem Tag beschäftigte ich mich primär mit dem Feedback, welches ich bei dem gestrigen Meeting bekommen habe. Ich begann damit, das Task-Auswahldashboard im Bezug auf Design und tabellarischer Sortierfunktion zu überarbeiten und einen Fehler bei der Status-Logik zu beseitigen.  
+\subsubsection*{30. März - 9:15 bis 16:15 Uhr}
+An diesem Tag beschäftigte ich mich primär mit dem Feedback, welches ich bei dem gestrigen Meeting bekommen habe. Ich begann damit, das Task-Auswahldashboard in Bezug auf Design und tabellarischer Sortierfunktion zu überarbeiten und einen Fehler bei der Status-Logik zu beseitigen.  
 
-\subsubsection*{31. März - 8:45 bis 13:45}
+\subsubsection*{31. März - 8:45 bis 13:45 Uhr}
 Heute erstellte ich zwei neue Ansichten des PowerBI Dashboards für Projektmanager: Eines, bei welchem die Mitarbeiterauslastung für eine frei-wählbare Woche angezeigt werden kann und eines, bei welchem für jedes Projekt eingesehen werden kann, wie viele der bereits gebuchten Arbeitsstunden dem Kunden verrechnet werden können und wie viele Stunden das Unternehmen selbst tragen muss. Darüber hinaus habe ich noch einen Fehler in dem Booking-Schnellerfassungsformular behoben, nachdem dieses die Warnungs- und Gesamtarbeitsstundenlimits nicht korrekt angezeigt hatte.  
 
 \subsection{April}
+\subsubsection*{3. April - 9:00 bis 15:15 Uhr}
+Nachdem der letzte volle Monat meines Praktikums begonnen hat, befasste ich mich heute damit, meinen bisher angelegten Quellcode ausführlich zu kommentieren, damit auch Mitarbeiter, die sich nach mir mit dem Projekt beschäftigen, ein gutes Verständnis meines Codes erlangen können. Darüber hinaus finalisierte ich das PowerBI Verrechnungsdashboard, mit welchem ich am 31. März nicht mehr ganz fertig geworden bin.
+
+\subsubsection*{4. April - 8:45 bis 16:15 Uhr}
+Der heutige Tag begann mit einer Schulung zu Microsoft Dynamics 365. Im Anschluss habe ich Hilfestellung von einer Kollegin bei dem Einrichten eines Microsoft Dyanmics Workflows erhalten, bei welchem ich auf die Guid einer Tabelle zugreifen muss, was Workflows jedoch nicht standardmäßig unterstützen. Danach begann ich mit der Dokumentation des gesamten Systems, wobei die Dokumentation aus einem Benutzer-, Administrator- und Entwicklerhandbuch bestehen wird.
+
+\subsubsection*{5. April - 9:15 bis 15:15 Uhr}
+Heute habe ich mich neben kleineren Fixes bei den Dashboards primär mit der Dokumentation der bestehenden Abläufe beschäftigt, wobei das Kapitel des Benutzerhandbuchs so weit fertiggestellt werden konnte. Deswegen begann ich mit der Beschreibung der einzelnen Komponenten der Dynamics Solution, welche morgen fortgesetzt wird.
+
+\subsubsection*{6. April - 8:45 bis 15:15 Uhr}
+An dem heutigen Tag habe ich alle JavaScript Kommentare auf den JSDoc Standard ausgebaut, um ein standardisiertes, leicht-leserliches und in HTML-kompilierbares Kommentar- und Dokumentationsformat für alle Funktionen zu benutzen. Darüber hinaus lag der Fokus erneut auf dem Ausarbeiten der technischen Dokumentation des Gesamtsystems.
 
 \subsection{Mai}
