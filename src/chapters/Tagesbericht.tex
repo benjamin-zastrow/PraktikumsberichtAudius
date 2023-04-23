@@ -198,4 +198,19 @@ An diesem Tag musste ich meine Solution wieder aus dem System exportieren und an
 \subsubsection*{14. April - 8:00 bis 14:00 Uhr}
 An dem heutigen Tag setzte ich das PowerBI Datenmodell größtenteils auf UniProCE um und versuchte in der Früh, Bugs in Project Operations, welche ebenfalls durch UniProCE verursacht werden, zu beheben.
 
+\subsubsection*{17. April - 7:15 bis 15:15 Uhr}
+Heute habe ich das PowerBI Projektmanager Dashboard auf die Datenbasis der Umgebung UniProCE umgesattelt, sowie die Frage, welche PowerBI Lizenz welche Angestellten benötigen, geklärt. Im Anschluss habe ich ein Gespräch mit Carlos zu dem aktuellen StatusQuo des Projekts geführt und den Code für die automatische Erstellung von Projekten bei dem Anlegen von Sales-Orders erstellt.
+
+\subsubsection*{18. April - 7:15 bis 15:15 Uhr}
+An diesem Tag habe ich den Code für die automatische Task-, bzw. Projekt-Erstellung bei dem Anlegen neuer Cases erstellt. Dies verlangte eine Änderung in dem Datenmodell, wonach das Skill-Feld, welches jeder Task aufweist, nicht mehr verpflichtend sein kann. Dies liegt daran, dass für die Erstellung eines neuen Tasks sonst zwingend ein Skill verlangt wird, jedoch kein Skill bei der Erstellung eines Case festgelegt wird.
+
+\subsubsection*{19. April - 7:15 bis 15:15 Uhr}
+Heute bekam ich in einem erneuten Anruf mit Carlos Input zu Rollup-Feldern, die für Tasks die Summe der Bookings in Stunden, welche an den Task gekoppelt sind, aber auch die der Bookings möglicher untergeordneter Tasks. Darüber hinaus habe ich einen "Team besetzen" Button für Projekte implementiert, bei dem alle Teammitglieder mit ihren Wochenstunden und Zielauslastung automatisch als Projektteammitglieder initialisiert werden. Abschließend habe ich begonnen, die Query-Steps in dem Power BI Datenmodell umzubenennen, um die Verständlichkeit zu erhöhen.
+
+\subsubsection*{20. April - 7:15 bis 15:15 Uhr}
+An diesem Tag vollendete ich die Umbenennung der Queries im Power BI Datenmodell, verlinkte Cases mit SalesOrders in meiner Solution, testete und debuggte das automatische Erstellen von Projekten und Tasks bei dem Abspeichern eines neuen Cases, fügte der Task-Entität ein weiteres Feld bzgl. der initialen Aufwandsschätzung hinzu und ergänzte das Feld um eine Geschäftsregel, nach der es nur einmal editierbar ist und dann automatisch auf read-only gesetzt wird. Anschließend aktualisierte ich die Dokumentation, sodass ich zwei weitere Kollegen, im Rahmen eines Einführungsgespräches in die technische Umsetzung des Projekts bis dato einweisen konnte, damit dieses nach meinem Berufspraktikum nahtlos fortgesetzt werden kann. 
+
+\subsubsection*{21. April - 7:15 bis 15:15 Uhr}
+Der heutige Tag war von Power BI Customizations geprägt. Dabei war das Ziel, das PM-Dashboard um Filtermöglichkeiten bzgl. Namen einzelner Mitarbeiter und Skill der Belegschaft zu erweitern. Während Filtern nach Namen kein Problem darstellt, ist PowerBI nicht in der Lage, nach Elementen einer Liste, welche in einer Tabellenspalte gespeichert ist, zu filtern, woraus sich eine größere Herausforderung ergeben wird.
+
 \subsection{Mai}
