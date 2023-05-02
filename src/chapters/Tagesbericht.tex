@@ -213,4 +213,23 @@ An diesem Tag vollendete ich die Umbenennung der Queries im Power BI Datenmodell
 \subsubsection*{21. April - 7:15 bis 15:15 Uhr}
 Der heutige Tag war von Power BI Customizations geprägt. Dabei war das Ziel, das PM-Dashboard um Filtermöglichkeiten bzgl. Namen einzelner Mitarbeiter und Skill der Belegschaft zu erweitern. Während Filtern nach Namen kein Problem darstellt, ist PowerBI nicht in der Lage, nach Elementen einer Liste, welche in einer Tabellenspalte gespeichert ist, zu filtern, woraus sich eine größere Herausforderung ergeben wird.
 
+\subsubsection*{24. April - 8:15 bis 14:15 Uhr}
+An diesem Tag habe ich das Problem um die Rollup-Felder gelöst, indem ich auf eine versteckte Hierarchiefunktion gestoßen bin. Darüber hinaus habe ich zusätzliche Task-Felder implementiert, welche wir bei dem letzten Gespräch mit Carlos definiert hatten. Im Anschluss habe ich die Dokumentation aktualisiert und begonnen, die gesamte Solution an den audius Styleguide für Customizations anzupassen.
+
+\subsubsection*{25. April - 8:45 bis 15:15 Uhr}
+Heute importierte ich die, nun an den Styleguide angepasste, Solution meines Projekts in das System. Davor musste ich die alte Solution mitsamt der Komponenten einzeln entfernen, da die Solution als "unmanaged" installiert wurde, um noch nachträglich Anpassungen vornehmen zu können. Damit auch das Power BI Datenmodell mit den abgewandelten Entitäten funktioniert, habe ich im Anschluss auch dort alle relevanten Query-Steps angepasst. Um diese Änderung auch in der Dokumentation des Systems widerzuspiegeln, wurde auch diese anschließend angepasst.
+
+\subsubsection*{26. April - Freigenommen wegen Verleihung des WKS Leistungsstipendiums}
+
+\subsubsection*{27. April - 8:45 bis 14:15 Uhr}
+An diesem Tag verlinkte ich Projektaufgaben und SalesOrder Details, eine Entität aus dem bestehenden CRM-System. Diese Verlinkung ist eine notwendige Parallelstruktur, da die Vorgabe besteht, dass sich an dem existierenden Invoicing-Prozess nichts ändern soll. Ein JavaScript Code erstellt ein CRM Booking automatisch dann, wenn ein neuer Zeiteintrag angelegt wird. Da das Setzen der Eigenschaften \enquote*{verrechenbar} und \enquote*{verrechnet} nun nicht mehr über Zeiteinträge, sondern über die CRM-Bookings stattfinden soll, kümmert sich ein Workflow um das Synchronisieren der funktionsgleichen Felder zwischen beiden Entitäten.
+
+\subsubsection*{28. April - 8:45 bis 14:15 Uhr}
+Heute erstellte ich den Link zu zugehörigen SalesOrders bei den automatisch erstellten CRM Bookings. Darüber hinaus fügte ich eine Möglichkeit hinzu, in dem PowerBI Projektmanager*innendashboard nach Fähigkeiten zu sortieren, damit beispielsweise eingesehen werden kann, wie ausgelastet die Entwickler*innen gerade sind. Im Anschluss ergänzte ich die Dokumentation entsprechend und begann, die intern im JS-Code, den Ansichten und dem BI-Datenmodell verwendete \enquote*{msdyn\_effortremaining} auf die selbst berechnete \enquote*{ud\_remainingcapacity}.
+
 \subsection{Mai}
+
+\subsubsection*{2. Mai - 8:45 bis 14:15 Uhr}
+Am heutigen Tag stellte ich die Änderungen an dem PowerBI-Datenmodell fertig und aktualisierte die Dokumentation. Im Anschluss erstellte ich ein ausführliches ToDo-Dokument, welches die nächsten Aktivitäten, die für die weitere Implementierung des Systems notwendig sind, erläutert. Danach musste ich gespiegelte Rollup-Felder für die Projekt-Entität erstellen, welche die bebuchten, verrechenbaren und verrechneten Stunden pro Projekt zusammenfassen, um auch hier einen Überblick basierend auf den selbst-berechneten Feldern zu bekommen.
+
+\subsubsection*{3. Mai - 8:45 bis 14:15 Uhr}
